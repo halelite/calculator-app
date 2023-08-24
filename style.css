@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background: hsl(222, 26%, 31%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 28px;
+}
+
+.theme {
+    display: flex;
+    user-select: none;
+}
+
+.theme p {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.btns {
+    margin-left: 15px;
+    background: hsl(223, 31%, 20%);
+    padding: 0 4px;
+    border-radius: 1rem;
+    height: 20px;
+    width: fit-content;
+}
+
+.theme-btn {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    top: -1px;
+    cursor: pointer;
+}
+
+.theme1 {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.theme1:hover {
+    background: hsl(6, 69%, 57%);
+}
+
+.theme-btn span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.result {
+    background: hsl(224, 36%, 15%);
+    height: 100px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+}
+
+.result span {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    user-select: none;
+
+}
+
+.num-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: hsl(223, 31%, 20%);
+    padding: 17px;
+    border-radius: 8px;
+    height: 350px;
+    justify-items: center;
+}
+
+.btn {
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px #8d8b8b;
+    cursor: pointer;
+    user-select: none;
+}
+
+.num:hover, .operator:hover {
+    background: hsl(0, 0%, 100%);
+    transition: background 0.3s ease-in;
+}
+
+.num, .operator, #del {
+    width: 77px;
+    height: 47px;
+}
+
+.num, .operator {
+    font-size: 30px;
+    color: hsl(221, 14%, 31%);
+    padding: 12px;
+    font-weight: bolder;
+    background: #dfdddd;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#reset, #calc {
+    height: 47px;
+    width: 178px;
+    color: hsl(0, 0%, 100%);
+}
+
+#reset {
+    grid-column: 1/3;
+    background: hsl(225, 21%, 49%);
+    box-shadow: 0 3px hsl(224, 28%, 35%);
+}
+
+#reset:hover {
+    background: hsl(223, 46%, 71%);
+    transition: background 0.3s ease-in;
+}
+
+#calc {
+    grid-column: 3/5;
+    background: hsl(6, 63%, 50%);
+    box-shadow: 0 3px hsl(6, 70%, 34%);
+}
+
+#calc:hover {
+    background: hsl(6, 69%, 57%);
+    transition: background 0.3s ease-in;
+}
+
+#del {
+    color: hsl(0, 0%, 100%);
+    background: hsl(225, 21%, 49%);
+    box-shadow: 0 3px hsl(224, 28%, 35%);
+}
+
+#del:hover {
+    background: hsl(223, 39%, 67%);
+    transition: background 0.3s ease-in;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 63%, 57%);
+}
+
+/* theme 2 css */
+body.two {
+    background: hsl(0, 0%, 90%);
+}
+
+.two .header {
+    color: hsl(60, 10%, 19%);
+}
+
+.two .theme p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.two .theme-btn span {
+    color: hsl(60, 10%, 19%);
+    font-size: 12px;
+    top: -22px;
+}
+
+.two .result span {
+    color: hsl(60, 10%, 19%);
+}
+
+.two .btns {
+    background: hsl(0, 5%, 81%);
+}
+
+.two .num-btns {
+    background: hsl(0, 5%, 81%);
+}
+
+.two .result {
+    background: hsl(0, 0%, 93%);
+}
+
+.two .btn {
+    background: hsl(45, 7%, 89%);
+    box-shadow: 0 3px hsl(35, 11%, 61%);
+}
+
+.two #calc {
+    background: hsl(25, 98%, 40%);
+}
+
+.two #calc:hover {
+    background: hsl(25, 83%, 55%);
+}
+
+.two #reset, .two #del {
+    background: hsl(185, 42%, 37%);
+    box-shadow: 0 3px hsl(185, 58%, 25%);
+}
+
+.two #reset:hover, .two #del:hover {
+    background: hsl(185, 40%, 52%);
+}
+
+.two .num, .two .operator {
+    color: hsl(60, 10%, 19%);
+}
+
+.two .num:hover,
+.two .operator:hover {
+    background: hsl(0, 0%, 100%);
+}
+
+.two .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* theme 3 css */
+body.three {
+    background: hsl(268, 75%, 9%);
+}
+
+.three .header {
+    color: hsl(52, 100%, 62%);
+}
+
+.three .theme p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.three .result {
+    background: hsl(268, 71%, 12%);
+}
+
+.three .theme-btn span {
+    color: hsl(52, 100%, 62%);
+}
+
+.three .result span {
+    color: hsl(52, 100%, 62%);
+}
+
+.three .btns {
+    background: hsl(268, 71%, 12%);
+}
+
+.three .num-btns {
+    background: hsl(268, 71%, 12%);
+}
+
+.three .btn {
+    background: hsl(268, 47%, 21%);
+    box-shadow: 0 3px hsl(290, 70%, 36%);
+}
+
+.three .btn:hover,
+.three .operator:hover {
+    background: hsl(268, 55%, 42%);
+}
+
+.three #calc {
+    background: hsl(176, 100%, 44%);
+    box-shadow: 0 3px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+.three #calc:hover {
+    background: hsl(176, 69%, 70%);
+}
+
+.three #reset,
+.three #del {
+    background: hsl(281, 89%, 26%);
+    box-shadow: 0 3px hsl(285, 91%, 52%);
+}
+
+.three #reset:hover,
+.three #del:hover {
+    background: hsl(281, 63%, 34%);
+}
+
+.three .num,
+.three .operator {
+    color: hsl(52, 100%, 62%);
+}
+
+.three .attribution {
+    color: #b1abab;
+}
+
+.three .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        width: 85%;
+        height: 90%;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .theme-btn span {
+        font-size: 9px;
+    }
+
+    .result {
+        height: 70px;
+    }
+
+    .result span {
+        font-size: 30px;
+    }
+
+    .num-btns {
+        row-gap: 2px;
+        column-gap: 5px;
+        padding: 15px;
+        min-width: 100%;
+    }
+
+    .btn {
+        border-radius: 0.2rem;
+        margin: auto;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .num,
+    .operator,
+    #del {
+        width: 48px;
+    }
+
+    #reset,
+    #calc {
+        height: 48px;
+        width: 110px;
+        letter-spacing: 0;
+        padding: 5px;
+    }
+
+    #reset {
+        font-size: 16px;
+    }
+
+    #del {
+        font-size: 16px;
+        padding: 5px;
+        letter-spacing: 0;
+    }
+
+    #calc {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+}
