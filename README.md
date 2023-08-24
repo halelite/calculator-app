@@ -26,12 +26,15 @@ Users should be able to:
 ### Screenshot
 
 **Theme 1**
+
 ![Design preview for the calculator app](./design/solution-img/Screenshot1.png)
 
 **Theme 2**
+
 ![Design preview for the calculator app](./design/solution-img/Screenshot2.png)
 
 **Theme 3**
+
 ![Design preview for the calculator app](./design/solution-img/Screenshot3.png)
 
 ### Links
